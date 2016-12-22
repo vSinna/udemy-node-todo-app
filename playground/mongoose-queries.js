@@ -34,7 +34,7 @@ const {ObjectID} = require('mongodb')
 const userID = '585af4e2d978461a0923fe9b'
 User.findById(userID).then(user => {
     if (!user) {
-        return console.log('User not found')
+        return console.log('User Not Found')
     }
     console.log(user)
 }, error => {
